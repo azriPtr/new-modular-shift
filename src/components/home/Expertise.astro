@@ -2,39 +2,39 @@
 const features = [
   {
     id: 'expertise-1',
-    name: 'Digital Experience Platforms',
+    name: 'Core Web Vitals Optimisation',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'We optimise every aspect of your site for speed, stability, and user experience, ensuring top scores and better rankings.',
   },
   {
     id: 'expertise-2',
-    name: 'Web & Mobile Development',
+    name: 'Content Workflows & Automation',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Streamline publishing with custom workflows, automation, and error-proof processes for your team.',
   },
   {
     id: 'expertise-3',
-    name: 'Serverless Computing Platforms',
+    name: 'Generative Engine Optimisation (GEO)',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Prepare your site for AI and large language models, maximising visibility in new search paradigms.',
   },
   {
     id: 'expertise-4',
-    name: 'Build & Test Automation Tools',
+    name: 'Website Rebuild Agency',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Specialists in rebuilding slow, outdated sites into fast, measurable platforms with modern stacks.',
   },
   {
     id: 'expertise-5',
-    name: 'Artificial Intelligence',
+    name: 'CRM Integrations',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Connect your website to HubSpot, Salesforce, Oomi, and custom CRMs for unified lead management.',
   },
   {
     id: 'expertise-6',
-    name: 'Full project support',
+    name: 'Ongoing Support & Growth',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Continuous monitoring, reporting, and enhancements to keep your platform ahead of the curve.',
   },
 ];
 ---
@@ -68,11 +68,11 @@ const features = [
                     aria-expanded="false"
                     x-bind:aria-expanded="isOpen.toString()"
                   >
-                    <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
+                    <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
                       <span class="font-medium">{feature.name}</span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
-                          class="text-primary-600 dark:text-primary-400 h-6 w-6 rotate-0 transform transition duration-200 ease-in-out"
+                          class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
                           x-bind:class="{ '-rotate-180': isOpen, 'rotate-0': !isOpen }"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 24 24"
@@ -86,7 +86,7 @@ const features = [
                   </button>
                 </dt>
                 <dd class="pb-6 pr-6" id={feature.id} x-show="isOpen" x-cloak x-collapse>
-                  <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
+                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">
                     {feature.description}
                   </p>
                 </dd>

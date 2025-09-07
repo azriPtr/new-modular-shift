@@ -1,21 +1,32 @@
 ---
-import About from '../components/home/About.astro';
-import Cta from '../components/home/Cta.astro';
-import Expertise from '../components/home/Expertise.astro';
 import Hero from '../components/home/Hero.astro';
+import AuthorityStrip from '../components/home/modularshift/AuthorityStrip.astro';
+import ProblemsWeSolve from '../components/home/modularshift/ProblemsWeSolve.astro';
 import Services from '../components/home/Services.astro';
-import Testimonials from '../components/home/Testimonials.astro';
+import Expertise from '../components/home/Expertise.astro';
+import OutcomesGrid from '../components/home/modularshift/OutcomesGrid.astro';
+import CaseHighlight from '../components/home/modularshift/CaseHighlight.astro';
+import HowWeWork from '../components/home/modularshift/HowWeWork.astro';
+import WhyChoose from '../components/home/modularshift/WhyChoose.astro';
+import FAQ from '../components/home/modularshift/FAQ.astro';
+import FinalCTA from '../components/home/modularshift/FinalCTA.astro';
+import About from '../components/home/About.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-  description="Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and Startup websites."
-  title="Stone · Premium Astro template"
+  description="We build blazing-fast websites, AI-ready SEO, and integrated lead systems. ModularShift delivers speed, visibility, and ROI-focused platforms."
+  title="ModularShift — High-Performance Websites, SEO & Lead Systems"
 >
   <Hero />
+  <AuthorityStrip />
+  <ProblemsWeSolve />
   <Services />
   <Expertise />
-  <About />
-  <Testimonials />
-  <Cta />
+  <OutcomesGrid />
+  <CaseHighlight />
+  <HowWeWork />
+  <WhyChoose />
+  <FAQ />
+  <FinalCTA />
 </Layout>
