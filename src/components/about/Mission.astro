@@ -2,19 +2,11 @@
 const stats = [
   {
     name: 'Years',
-    value: '9',
-  },
-  {
-    name: 'Experts',
-    value: '15',
+    value: '1',
   },
   {
     name: 'Projects',
-    value: '122',
-  },
-  {
-    name: 'Awards',
-    value: "'9'",
+    value: '999',
   },
 ];
 ---
@@ -34,24 +26,23 @@ const stats = [
         <div class="space-y-8 sm:space-y-12">
           <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Our mission</h2>
           <div class="space-y-6">
-            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed
-              consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi.
-              Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames
-              senectus vitae.
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              At ModularShift, our mission is to help ambitious brands grow faster with digital
+              platforms that are built for performance, visibility, and scale. We believe websites
+              should do more than sit online — they should be powerful engines that attract
+              customers, generate leads, and prove ROI.
             </p>
-            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem
-              nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet
-              quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis
-              elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat
-              donec laoreet quam urna.
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              We know that for many organisations, websites become slow, outdated, and hard to
+              manage. Content teams struggle to publish safely, sales teams can’t track leads, and
+              marketing feels disconnected from real results. That’s why we exist: to take away the
+              complexity and replace it with clarity.
             </p>
-            <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
-              Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies.
-              Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum
-              consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim
-              fermentum lacus in. Viverra.
+            <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
+              By combining high-performance frameworks, modern CMS workflows, SEO and AI readiness,
+              and integrated lead systems, we give businesses a digital foundation they can trust.
+              Our mission is to make growth not just possible, but inevitable — with platforms that
+              keep improving over time.
             </p>
           </div>
         </div>
@@ -60,7 +51,7 @@ const stats = [
         <dl class="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {
             stats.map((stat) => (
-              <div class="border-primary-900/10 dark:border-primary-300/10 rounded-3xl border p-6">
+              <div class="rounded-3xl border border-primary-900/10 p-6 dark:border-primary-300/10">
                 <dt class="text-base">{stat.name}</dt>
                 <dd class="text-3xl font-medium tracking-tight">{stat.value}</dd>
               </div>

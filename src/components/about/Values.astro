@@ -3,29 +3,29 @@ const values = [
   [
     {
       ref: '01',
-      name: 'Excellence',
+      name: 'Performance Obsessed',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'We believe speed is the foundation of digital success. From sub-second load times to top Core Web Vitals, every project we deliver is engineered for maximum performance. A faster site isn’t just a technical win — it means happier users, higher rankings, and stronger conversion rates.',
     },
     {
       ref: '02',
-      name: 'Innovation',
+      name: 'Modular by Design',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'One size doesn’t fit all, and growth is never linear. Our modular approach lets you start with the essentials — a fast, SEO-strong foundation — and add layers as you need them. Whether it’s CRM integrations, AI optimisation, or advanced automation, every piece connects seamlessly into the bigger system.',
     },
   ],
   [
     {
       ref: '03',
-      name: 'Teamwork',
+      name: 'Long-Term Partners',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'We don’t believe in “launch and leave.” Technology evolves too fast for that. Instead, we build long-term partnerships, continuously monitoring, optimising, and evolving your platform. This way, your website never falls behind, and your business keeps compounding results.',
     },
     {
       ref: '04',
-      name: 'Respect',
+      name: 'Transparent Growth',
       description:
-        'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+        'Our approach is grounded in clarity and accountability. We focus on measurable outcomes, real data, and strategies that create lasting value. No hidden complexity, no vanity metrics — just digital platforms that prove their worth through results you can see and track.',
     },
   ],
 ];
@@ -40,11 +40,11 @@ const values = [
           values.map((column, index) => (
             <div class:list={['space-y-8', index === 1 && 'lg:mt-16']}>
               {column.map((value) => (
-                <div class="bg-primary-500/10 dark:bg-primary-400/10 flex flex-col gap-12 rounded-3xl px-6 py-8">
+                <div class="flex flex-col gap-12 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
                   <p class="text-sm">{value.ref}</p>
                   <div class="flex flex-col gap-4">
                     <h3 class="text-xl font-medium">{value.name}</h3>
-                    <p class="text-primary-950/70 dark:text-primary-200/70 text-base sm:text-lg">
+                    <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
                       {value.description}
                     </p>
                   </div>
